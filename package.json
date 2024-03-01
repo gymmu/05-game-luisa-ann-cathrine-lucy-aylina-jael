@@ -1,6 +1,6 @@
 {
   "name": "05-game-project",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Einstiegspunkt in ein Spielprojekt.",
   "type": "module",
   "scripts": {
@@ -11,7 +11,9 @@
   },
   "keywords": [],
   "author": "Cedric Geissmann <cedric.geissmann@sbl.ch>",
-  "contributors": ["Aylina Ospina <aylina.ospina@edu.sbl.ch>, Jaël Theiler <jael.theiler@edu.sbl.ch>, Ann-Catherine Böller <ann-catherine.boller@edu.sbl.ch>, Luisa Rudin <luisa.rudin@edu.sbl.ch>, Lucy Wehrli <lucy.wehrli@edu.sbl.ch>"],
+  "contributors": [
+    "Aylina Ospina <aylina.ospina@edu.sbl.ch>, Jaël Theiler <jael.theiler@edu.sbl.ch>, Ann-Catherine Böller <ann-catherine.boller@edu.sbl.ch>, Luisa Rudin <luisa.rudin@edu.sbl.ch>, Lucy Wehrli <lucy.wehrli@edu.sbl.ch>"
+  ],
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.57.0",
