@@ -4,3 +4,9 @@
 
 - Die Datei `changes.md` hinzugefügt.
 - README.md erstellt.
+
+Version 01.03.24
+
+- Titel geändert
+- Intro geschrieben
+- Spielprinzip erstellt
