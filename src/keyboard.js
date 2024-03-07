@@ -12,24 +12,24 @@ export function loadKeyboardJumpAndRun() {
   // Solange wie die Taste gedrückt wird, wird der Spieler in jedem Frame nach
   // links verschoben.
 
-  k.onKeyPress("up", () => {
-    player.play("runUp")
-  })
+  // k.onKeyPress("up", () => {
+  //   player.play("runUp")
+  // })
   k.onKeyDown("up", () => {
     player.move(k.UP.scale(player.speed))
   })
-  k.onKeyRelease("up", () => {
-    player.play("idleUp")
-  })
-  k.onKeyPress("down", () => {
-    player.play("runDown")
-  })
+  // k.onKeyRelease("up", () => {
+  //   player.play("idleUp")
+  // })
+  // k.onKeyPress("down", () => {
+  //   player.play("runDown")
+  // })
   k.onKeyDown("down", () => {
     player.move(k.DOWN.scale(player.speed))
   })
-  k.onKeyRelease("down", () => {
-    player.play("idleDown")
-  })
+  // k.onKeyRelease("down", () => {
+  //   player.play("idleDown")
+  // })
 }
 
 /**
