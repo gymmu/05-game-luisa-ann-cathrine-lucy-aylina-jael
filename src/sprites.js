@@ -11,6 +11,10 @@ import { k } from "./game.js"
  * damit können einfach andere Atmosphären im Spiel erzeugt werden.
  */
 export default function loadSprites() {
+  k.loadSpriteAtlas("sprites/char_new.png", {
+    ken: { x: 0, y: 0, width: 48, height: 32 },
+  })
+
   k.loadSpriteAtlas("sprites/char.png", {
     hero: {
       // Alles war hier kommt, gehört zum Sprite `hero`
@@ -46,5 +50,6 @@ export default function loadSprites() {
     tree: { x: 1 * TS, y: 1 * TS, width: TS, height: TS },
     cave: { x: 2 * TS, y: 1 * TS, width: TS, height: TS },
     wall: { x: 3 * TS, y: 1 * TS, width: TS, height: TS },
+    stone2: { x: 0, y: 2 * TS },
   })
 }
