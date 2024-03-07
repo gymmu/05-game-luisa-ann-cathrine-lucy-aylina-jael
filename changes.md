@@ -10,3 +10,10 @@ Version 01.03.24
 - Titel geändert
 - Intro geschrieben
 - Spielprinzip erstellt
+
+version 7.3.2024
+
+- Steuerung angepasst
+- ken hinzugefügt
+- hintergund ausgesucht
+- hintergrund zu pink geändert
