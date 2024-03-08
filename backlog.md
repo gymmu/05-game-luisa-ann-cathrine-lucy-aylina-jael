@@ -12,4 +12,11 @@
 - [ ] Spielkomponenten verstehen, und neue erstellen (`src/player.js` und
       `src/maps.js`)
 - [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
-- [X] bilder machen
+- [X] LEvel 2
+- [ ] level 1 fertig
+- [ ] meteoriten einfügen
+- [ ] blaue sterne einfügen
+- [x] hintergrund machen
+- [x] boden weg
+- [x] rakete rein
+- [x] gelbe sterne rein
