@@ -10,7 +10,7 @@ k.scene("lose", () => {
   const player = k.get("player")[0]
   player.destroy()
   k.add([
-    k.text("Game over", { size: 44 }),
+    k.text("Game over but you're still kenough", { size: 44 }),
     k.pos(k.width() / 2, k.height() / 2),
     k.anchor("bot"),
   ])
