@@ -17,3 +17,13 @@ version 7.3.2024
 - ken hinzugefügt
 - hintergund ausgesucht
 - hintergrund zu pink geändert
+
+Version 8.3.24
+
+- Sterne gezeichnet
+- Meteoriten gezeichnet
+- Meteoriten eingefügt
+- Wiederbelebungssterne eingefügt
+- Scharzes Loch gzeichnet und eingefügt
+- Hintergrundbild eingeügt
+- Boden entfernt
