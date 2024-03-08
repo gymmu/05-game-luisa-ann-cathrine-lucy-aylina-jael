@@ -52,4 +52,6 @@ export default function loadSprites() {
     wall: { x: 3 * TS, y: 1 * TS, width: TS, height: TS },
     stone2: { x: 0, y: 2 * TS },
   })
+
+  k.loadSprite("background", "sprites/space.jpg")
 }
