@@ -20,3 +20,5 @@
 - [x] boden weg
 - [x] rakete rein
 - [x] gelbe sterne rein
+- [x] bilder auf libresprite fertig machen
+- [ ] 
