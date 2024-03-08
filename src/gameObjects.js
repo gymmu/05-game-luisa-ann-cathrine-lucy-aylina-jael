@@ -44,7 +44,7 @@ export function wallJumpAndRun(x, y) {
  */
 export function mushroomJumpAndRun(x, y) {
   k.add([
-    k.sprite("mushroom"),
+    k.sprite("smallmeteorite"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
@@ -66,7 +66,7 @@ export function mushroomJumpAndRun(x, y) {
  */
 export function flowerJumpAndRun(x, y) {
   k.add([
-    k.sprite("flower"),
+    k.sprite("goldenstar"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
@@ -90,7 +90,7 @@ export function goalJumpAndRun(x, y) {
     k.area(),
     k.move(k.LEFT, 200),
     k.anchor("center"),
-    k.scale(1.5),
+    k.scale(3.0),
     "goal",
   ])
 }
@@ -181,7 +181,7 @@ export function treeRPG(x, y) {
  */
 export function flowerRPG(x, y) {
   k.add([
-    k.sprite("flower"),
+    k.sprite("goldenstar"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
     "flower",
@@ -197,7 +197,7 @@ export function flowerRPG(x, y) {
  */
 export function mushroomRPG(x, y) {
   k.add([
-    k.sprite("mushroom"),
+    k.sprite("smallmeteorite"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
     "obstacle",
