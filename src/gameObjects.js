@@ -84,11 +84,13 @@ export function flowerJumpAndRun(x, y) {
  */
 export function goalJumpAndRun(x, y) {
   k.add([
-    k.sprite("cave"),
+    k.sprite("wormhole"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
     k.move(k.LEFT, 200),
+    k.anchor("center"),
+    k.scale(1.5),
     "goal",
   ])
 }

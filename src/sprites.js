@@ -1,4 +1,4 @@
-import { TILESIZE as TS } from "./globals"
+import { TILESIZE, TILESIZE as TS } from "./globals"
 import { k } from "./game.js"
 
 /**
@@ -51,5 +51,6 @@ export default function loadSprites() {
     cave: { x: 2 * TS, y: 1 * TS, width: TS, height: TS },
     wall: { x: 3 * TS, y: 1 * TS, width: TS, height: TS },
     stone2: { x: 0, y: 2 * TS },
+    wormhole: { x: 0, y: 2 * TS, width: TS, height: TS },
   })
 }
