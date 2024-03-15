@@ -22,6 +22,8 @@ import { TILESIZE } from "./globals.js"
 
 import { getPlayer } from "./player.js"
 
+import * as GameObjects from "./gameObjects.js"
+
 /**
  * Hier wird die GameEngine initialisiert. Wir können hier verschiedene Dinge
  * anpassen. Wichtig ist das wir kaboom sagen wo unser Spiel gezeichnet werden
@@ -99,6 +101,27 @@ export function addGeneralGameLogic() {
     await import("./scenes/lose.js")
     k.go("lose")
   })
+
+  function spawnObstacle() {
+    const rand = k.randi(0, 2)
+    if (rand === 0) {
+      GameObjects.flowerJumpAndRun(
+        k.width() / TILESIZE,
+        k.rand(0, k.height() / TILESIZE),
+      )
+    } else {
+      GameObjects.mushroomJumpAndRun(
+        k.width() / TILESIZE,
+        k.rand(0, k.height() / TILESIZE),
+      )
+    }
+
+    k.wait(k.rand(0.5, 1.5), () => {
+      spawnObstacle()
+    })
+  }
+
+  spawnObstacle()
 }
 
 /**
