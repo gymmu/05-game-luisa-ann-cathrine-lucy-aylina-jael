@@ -22,5 +22,5 @@
 - [x] gelbe sterne rein
 - [x] bilder auf libresprite fertig machen
 - [ ] Musik einfügen
-- [ ] Game over Text einfügen
+- [x] Game over Text einfügen
 - [ ] kometen zufällig generieren
