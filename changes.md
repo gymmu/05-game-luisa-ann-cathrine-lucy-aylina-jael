@@ -11,7 +11,7 @@ Version 01.03.24
 - Intro geschrieben
 - Spielprinzip erstellt
 
-version 7.3.2024
+Version 7.3.2024
 
 - Steuerung angepasst
 - ken hinzugefügt
@@ -25,5 +25,11 @@ Version 8.3.24
 - Meteoriten eingefügt
 - Wiederbelebungssterne eingefügt
 - Scharzes Loch gzeichnet und eingefügt
-- Hintergrundbild eingeügt
+- Hintergrundbild eingefügt
 - Boden entfernt
+
+Version 15.3.2024
+
+- Musik einegfügt
+- Game over Text eingefügt
+- Meteoriten und Sterne random gemacht
