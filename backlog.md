@@ -25,3 +25,4 @@
 - [ ] Entscheidunge wegen den blauen Sternen
 - [x] Game over Text einfügen
 - [x] kometen zufällig generieren
+- [ ] schwarzes loch an das ENde
