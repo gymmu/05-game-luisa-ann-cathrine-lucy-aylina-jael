@@ -21,7 +21,8 @@
 - [x] rakete rein
 - [x] gelbe sterne rein
 - [x] bilder auf libresprite fertig machen
-- [ ] Musik einfügen
+- [x] Musik einfügen
 - [ ] Entscheidunge wegen den blauen Sternen
 - [x] Game over Text einfügen
-- [ ] kometen zufällig generieren
+- [x] kometen zufällig generieren
+- [ ] schwarzes loch an das ENde
