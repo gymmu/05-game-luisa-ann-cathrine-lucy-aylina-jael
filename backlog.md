@@ -14,15 +14,18 @@
 - [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
 - [ ] Level 2 fertig
 - [ ] level 1 fertig
-- [ ] meteoriten einfügen
-- [ ] blaue sterne einfügen
+- [x] meteoriten einfügen
+- [ ] blaue sterne falls ja einfügen
 - [x] hintergrund machen
 - [x] boden weg
 - [x] rakete rein
 - [x] gelbe sterne rein
 - [x] bilder auf libresprite fertig machen
 - [x] Musik einfügen
-- [ ] Entscheidunge wegen den blauen Sternen
+- [x] Entscheidunge wegen den blauen Sternen
 - [x] Game over Text einfügen
 - [x] kometen zufällig generieren
 - [ ] schwarzes loch an das ENde
+- [ ] Problem mit der Musik flicken
+- [ ] level 2 steuerung
+- [ ] barbie ende nach level 2
