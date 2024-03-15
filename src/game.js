@@ -46,6 +46,14 @@ export const k = kaboom({
  */
 loadSprites()
 
+function loadMusic() {
+  k.loadSound("music", "musik/sound.mp3")
+  k.play("music", { loop: true })
+  volume(0.5)
+}
+
+loadMusic()
+
 /**
  * Diese Funktion erstellt die generelle Spiellogik die in allen Levels gilt.
  *
