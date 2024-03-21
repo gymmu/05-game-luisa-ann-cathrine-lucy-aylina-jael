@@ -13,19 +13,19 @@
       `src/maps.js`)
 - [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
 - [ ] Level 2 fertig
-- [ ] level 1 fertig
-- [x] meteoriten einfügen
-- [ ] blaue sterne falls ja einfügen
-- [x] hintergrund machen
-- [x] boden weg
-- [x] rakete rein
-- [x] gelbe sterne rein
-- [x] bilder auf libresprite fertig machen
+- [ ] Level 1 fertig
+- [x] Meteoriten einfügen
+- [ ] Blaue Sterne falls ja einfügen
+- [x] Hintergrund machen
+- [x] Boden weg
+- [x] Rakete einfügen
+- [x] Gelbe Sterne einfügen
+- [x] Bilder auf Libresprite fertig machen
 - [x] Musik einfügen
-- [x] Entscheidunge wegen den blauen Sternen
-- [x] Game over Text einfügen
-- [x] kometen zufällig generieren
-- [ ] schwarzes loch an das ENde
+- [x] Entscheidung wegen den blauen Sternen
+- [x] Game Over Text einfügen
+- [x] Kometen zufällig generieren
+- [ ] Schwarzes Loch an das Ende
 - [ ] Problem mit der Musik flicken
-- [ ] level 2 steuerung
-- [ ] barbie ende nach level 2
+- [ ] Level 2 Steuerung erledigen
+- [ ] Barbie am Snde nach Level 2 einfügen
