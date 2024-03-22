@@ -29,3 +29,5 @@
 - [ ] Problem mit der Musik flicken
 - [ ] Level 2 Steuerung erledigen
 - [ ] Barbie am Snde nach Level 2 einfügen
+- [ ] Nicht sterben wenn zu weit nach unten
+- [ ] Sterne machen schneller (oben/unten)
