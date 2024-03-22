@@ -64,5 +64,11 @@ k.scene("level-01", async () => {
     if (player.pos.y > 720) {
       k.go("lose")
     }
+
+    // Wenn das Wurmloch links aus dem fenster geht, ist das spiel verloren
+    const wormhole = k.get("goal")[0]
+    if (wormhole.pos.x < 0) {
+      k.go("lose")
+    }
   })
 })
