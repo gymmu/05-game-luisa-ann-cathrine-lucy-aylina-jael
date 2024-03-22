@@ -19,13 +19,13 @@ import "./lose.js"
  * wir einige spezialisierte Funktionen verwenden.
  *
  */
-k.scene("level-01", async () => {
+k.scene("level-03", async () => {
   // Wir stellen die Gravitation ein, damit es sich um ein Jump'n'Run-Spiel
   // handelt.
   k.setGravity(0)
 
   // Wir erstellen den Spieler
-  createPlayer()
+  //createPlayer()
 
   // Wir laden die Tasenbelegung für ein Jump'n'Run-Spiel.
   loadKeyboardJumpAndRun()
@@ -33,7 +33,7 @@ k.scene("level-01", async () => {
   // Hier lassen wir die Spielwelt erstellen.
   // Wir müssen dieser Funktion auch den Spieler übergeben, damit die
   // Position vom Spieler richtig gesetzt werden kann.
-  await generateMapJumpAndRun("maps/level-01.txt")
+  await generateMapJumpAndRun("maps/level-03.txt")
 
   k.add([
     k.sprite("background", { width: k.width(), height: k.height() }),
@@ -50,8 +50,8 @@ k.scene("level-01", async () => {
   // verwendet wird.
   // Hier ist es so das wenn der Spieler mit dem "goal" kollidiert, dann
   // kommen wir ins nächste Level.
-  k.onCollide("player", "goal", () => {
-    k.go("level-02")
+  k.onCollide("goal", () => {
+    k.go("finish")
   })
 
   // Diese Funktion wird bei jedem Frame ausgeführt. Bei einem Jump'n'Run ist
@@ -62,12 +62,6 @@ k.scene("level-01", async () => {
   k.onUpdate(() => {
     const player = k.get("player")[0]
     if (player.pos.y > 720) {
-      k.go("lose")
-    }
-
-    // Wenn das Wurmloch links aus dem fenster geht, ist das spiel verloren
-    const wormhole = k.get("goal")[0]
-    if (wormhole.pos.x < 0) {
       k.go("lose")
     }
   })
