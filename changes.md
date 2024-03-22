@@ -33,3 +33,10 @@ Version 15.3.2024
 - Musik einegfügt
 - Game over Text eingefügt
 - Meteoriten und Sterne random gemacht
+
+Version 22.3.24
+
+- Level 3 erstellt
+- Schwarzes Loch verändert
+- Bild auf der Website geändert
+- Steureung repariert
