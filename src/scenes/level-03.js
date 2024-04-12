@@ -3,7 +3,7 @@ import createPlayer from "../player.js"
 import { generateMapJumpAndRun } from "../map.js"
 import { loadKeyboardJumpAndRun } from "../keyboard.js"
 
-import "./level-02.js"
+import "./finish.js"
 import "./lose.js"
 
 /** Das ist unser erstes Level. Hier können wir Dinge einstellen die nur für
@@ -62,11 +62,7 @@ k.scene("level-03", async () => {
   k.onUpdate(() => {
     const player = k.get("player")[0]
     if (player.pos.y > 720) {
-      k.go("lose")
-    }
-    const barbie = k.get("goal")[0]
-    if (barbie.pos.x < 0) {
-      k.go("lose")
+      k.go("finish")
     }
   })
 })
