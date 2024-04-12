@@ -1,60 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Simple Reveal.js Presentation</title>
-    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/dracula.css">
-</head>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/reveal.js/dist/theme/dracula.css" />
+  </head>
 
-<body>
+  <body>
     <div class="reveal">
-        <div class="slides">
+      <div class="slides">
+        <!-- Dieser Abschnitt stellt eine Folie in Reveal.js dar -->
+        <section>
+          <h1>I'm just Ken</h1>
+          <!-- Mit der Klasse fragment, werden Teile erst nach und nach eingeblendet.-->
+          <p class="fragment">Lucy, Luisa, Ann-Cathrine, Jaël, Aylina</p>
+        </section>
 
-            <!-- Dieser Abschnitt stellt eine Folie in Reveal.js dar -->
-            <section>
-                <h1>Demo Spiel</h1>
-                <!-- Mit der Klasse fragment, werden Teile erst nach und nach eingeblendet.-->
-                <p class="fragment">Cedric Geissmann</p>
+        <section>
+          <h3>Spielprinzip</h3>
+          <!-- Wenn sections verschachtelt sind, werden damit Unterfolien erstellt.-->
+          <section>
+            <h4>Fly'n'die</h4>
+            <ul>
+              <li>Bis zum Ende des Levels kommen (schwarzes Loch)</li>
+              <li>Meteoriten machen Schaden</li>
+              <li>Gelbe Sterne füllen die Energie auf</li>
+              <li>Nicht zu hoch/tief fliegen</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Das hier ist dann die zweite Folie unter dem gleichen Titel.-->
+        <section>
+          <h3>Entstehungsgeschichte</h3>
+          <section>
+            <h4>Unsere Ursprungsidee</h4>
+            <ul>
+              <li>Etwas das fliegt</li>
+              <li>Barbiefilm "Shooting star"</li>
+              <li>Ken soll zu Barbie</li>
+              <li>Geschichte dahinter</li>
+              <li>Oskars</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Die Spielgeschichte</h4>
+            <ul>
+              <li>Ken tut alles für Barbie</li>
+              <li>Rakete</li>
+              <li>Auf dem Weg zu Barbie</li>     
+        </section>
+
+        <section>
+          <h3>Arbeitsteilung der Gruppe</h3>
+          <ul>
+            <li>Zu zweit oder zu dritt</li>
+            <li>Arbeiten alleine</li>
+            <li>Kommunikation</li>
+            <li>Problematiken</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Unsere Probleme</h3>
+          <ul>
+            <li>Branches vergessen</li>
+            <li>Musik</li>
+            <li>Alleine oder mit Hilfe</li>
+            </ul>
+            </section>
             </section>
 
-            <section>
-                <h3>Spielprinzip</h3>
-                <!-- Wenn sections verschachtelt sind, werden damit Unterfolien erstellt.-->
-                <section>
-                    <h4>Jump'n'Run</h4>
-                    <ul>
-                        <li>Bis zum Ende des Levels kommen</li>
-                        <li>Pilze machen Schaden</li>
-                        <li>Blumen geben Lebenspunkte</li>
-                        <li>Nicht von der Plattform fallen</li>
-                    </ul>
-                </section>
-
-                <!-- Das hier ist dann die zweite Folie unter dem gleichen Titel.-->
-                <section>
-                    <h4>RPG</h4>
-                    <ul>
-                        <li>Pilze machen Schaden</li>
-                        <li>Blumen geben Lebenspunkte</li>
-                        <li>Man muss eine Blume sammeln um das Spiel zu beenden</li>
-                        <li>Höle am Ende des Levels betreten</li>
-                    </ul>
-                </section>
-            </section>
-
-            <!-- Die letzte Folie soll einen direkten Link zum Spiel sein. -->
-            <section>
-                <a href="game.html" target="_blank">Demo</a>
-            </section>
-
-        </div>
+        <!-- Die letzte Folie soll einen direkten Link zum Spiel sein. -->
+        <section>
+          <a href="game.html" target="_blank">Demo</a>
+        </section>
+      </div>
     </div>
     <script type="module">
-        import Reveal from 'reveal.js';
-        Reveal.initialize();
+      import Reveal from "reveal.js"
+      Reveal.initialize()
     </script>
-</body>
-
+  </body>
 </html>
