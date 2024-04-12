@@ -40,3 +40,12 @@ Version 22.3.24
 - Schwarzes Loch verändert
 - Bild auf der Website geändert
 - Steureung repariert
+
+Version 12.4.2024
+
+- Präsentation fast fertig
+- Game over Text erstellt
+- Geschwindigkeit angepasst
+- Ken nach hinten verschoben
+- Barbie gezeichnet ud eingesetzt im letzten Level
+- Beschreibung geändert
