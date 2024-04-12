@@ -64,5 +64,9 @@ k.scene("level-03", async () => {
     if (player.pos.y > 720) {
       k.go("lose")
     }
+    const barbie = k.get("goal")[0]
+    if (barbie.pos.x < 0) {
+      k.go("lose")
+    }
   })
 })
