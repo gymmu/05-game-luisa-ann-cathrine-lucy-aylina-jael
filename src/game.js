@@ -99,8 +99,8 @@ export function addGeneralGameLogic() {
    */
   player.on("heal", () => {
     const oldSpeed = player.speed
-    player.speed *= 2
-    k.wait(1, () => {
+    player.speed *= 1.5
+    k.wait(0.5, () => {
       player.speed = oldSpeed
     })
   })
