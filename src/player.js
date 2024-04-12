@@ -44,7 +44,7 @@ export default function createPlayer() {
    * geschoben, dass der Spieler in der Mitte ist.
    */
   player.onUpdate(() => {
-    k.camPos(player.pos)
+    k.camPos(k.vec2(player.pos.x + 320, player.pos.y))
   })
 }
 
