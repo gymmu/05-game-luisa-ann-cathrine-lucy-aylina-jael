@@ -97,11 +97,10 @@ export function addGeneralGameLogic() {
    * Sekunde verdoppelt. Danach wird die Geschwindigkeit wieder zurück
    * gesetzt.
    */
-  player.on("heal", () => {
-    const oldSpeed = player.speed
+  player.on("heal", async () => {
     player.speed *= 1.5
-    k.wait(0.5, () => {
-      player.speed = oldSpeed
+    await k.wait(1, () => {
+      player.speed = TILESIZE * 5
     })
   })
 
