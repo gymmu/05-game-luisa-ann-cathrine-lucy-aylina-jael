@@ -95,6 +95,19 @@ export function goalJumpAndRun(x, y) {
   ])
 }
 
+export function barbie(x, y) {
+  k.add([
+    k.sprite("barbie"),
+    k.pos(k.vec2(x, y).scale(TILESIZE)),
+    k.body({ isStatic: true }),
+    k.area(),
+    k.move(k.LEFT, 200),
+    k.anchor("center"),
+    k.scale(3.0),
+    "goal",
+  ])
+}
+
 /**
  * Ein Hintergrund Spielobjekt, das auf leeren Feldern oder als Hintergrund von
  * anderen Objekten gesetzt wird.
