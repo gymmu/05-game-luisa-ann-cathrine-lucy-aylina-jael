@@ -10,35 +10,32 @@ import "./level-03.js"
  *
  * Hier gibt es keine Gravitation, wir sind hier in einem RPG-Setting.
  */
-k.scene(
-  "level-02",
-  async () => {
-    k.setGravity(0)
-    //createPlayer()
+k.scene("level-02", async () => {
+  k.setGravity(0)
+  //createPlayer()
 
-    loadKeyboardJumpAndRun()
+  loadKeyboardJumpAndRun()
 
-    await generateMapJumpAndRun("maps/level-02.txt")
-    k.add([
-      k.sprite("background", { width: k.width(), height: k.height() }),
-      k.pos(0, 0),
-      k.fixed(),
-      k.z(-100),
-    ])
+  await generateMapJumpAndRun("maps/level-02.txt")
+  k.add([
+    k.sprite("background", { width: k.width(), height: k.height() }),
+    k.pos(0, 0),
+    k.fixed(),
+    k.z(-100),
+  ])
 
-    addGeneralGameLogic()
+  addGeneralGameLogic()
 
-    k.onCollide("player", "goal", (player) => {
-      {
-        k.go("level-03")
-      }
-    })
+  k.onCollide("player", "goal", (player) => {
+    {
+      k.go("level-03")
+    }
+  })
 
-    k.onCollide("player", "flower", (player, flower) => {
-      flower.destroy()
-      player.hasFlower = true
-    })
-  },
+  k.onCollide("player", "flower", (player, flower) => {
+    flower.destroy()
+    player.hasFlower = true
+  })
   k.onUpdate(() => {
     const player = k.get("player")[0]
     if (player.pos.y > 720) {
@@ -50,5 +47,5 @@ k.scene(
     if (wormhole.pos.x < 0) {
       k.go("lose")
     }
-  }),
-)
+  })
+})
