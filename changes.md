@@ -49,3 +49,13 @@ Version 12.4.2024
 - Ken nach hinten verschoben
 - Barbie gezeichnet ud eingesetzt im letzten Level
 - Beschreibung geändert
+
+Version 18.4.24
+
+- Präsentation Farbe geändert
+- Präsentation Bilder eingefügt
+- Barbie geflickt
+- Ende Text kommt rechtzeitig
+- Bild im Ende Text eingefügt
+- Nicht ins unendliche fliegen
+- Maximum hp gemacht
