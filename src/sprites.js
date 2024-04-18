@@ -54,7 +54,7 @@ export default function loadSprites() {
     goldenstar: { x: 1 * TS, y: 2 * TS, width: TS, height: TS },
     smallmeteorite: { x: 2 * TS, y: 2 * TS, width: TS, height: TS },
   })
-
+  k.loadSprite("finish", "sprites/finish.png")
   k.loadSprite("background", "sprites/space.jpg")
 
   k.loadSpriteAtlas("sprites/char2.png", {
