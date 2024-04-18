@@ -11,7 +11,7 @@
 - [x] Karten verstehen und verändern (`src/maps.js`)
 - [x] Spielkomponenten verstehen, und neue erstellen (`src/player.js` und
       `src/maps.js`)
-- [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
+- [x] Präsentation für das Endprodukt in (`pres.html`) anpassen
 - [x] Level 2 fertig
 - [x] Level 1 fertig
 - [x] Meteoriten einfügen
@@ -25,8 +25,11 @@
 - [x] Game Over Text einfügen
 - [x] Kometen zufällig generieren
 - [x] Schwarzes Loch an das Ende
-- [ ] Problem mit der Musik flicken
+- [x] Problem mit der Musik flicken
 - [x] Level 2 Steuerung erledigen
-- [ ] Barbie am Snde nach Level 2 einfügen
+- [x] Barbie am Snde nach Level 2 einfügen
 - [x] Nicht sterben wenn zu weit nach unten
-- [ ] Sterne machen schneller (oben/unten)
+- [x] Sterne machen schneller (oben/unten)
+- [x] maximum HP
+- [x] Gewinnnachtricht
+- [x] Farben in Präsentation anpassen
