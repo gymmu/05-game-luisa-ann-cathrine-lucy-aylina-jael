@@ -29,4 +29,4 @@
 - [x] Level 2 Steuerung erledigen
 - [ ] Barbie am Snde nach Level 2 einfügen
 - [x] Nicht sterben wenn zu weit nach unten
-- [ ] Sterne machen schneller (oben/unten)
+- [] Sterne machen schneller (oben/unten)
