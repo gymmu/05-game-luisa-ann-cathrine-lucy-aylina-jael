@@ -46,6 +46,7 @@ export default function createPlayer() {
   player.onUpdate(() => {
     k.camPos(k.vec2(player.pos.x + 320, player.pos.y))
   })
+  player.setMaxHP(player.max_hp)
 }
 
 /**
