@@ -57,6 +57,7 @@ export default function loadSprites() {
   k.loadSprite("finish", "sprites/finish.png")
   k.loadSprite("background", "sprites/space.jpg")
 
+  k.loadSprite("spaces", "sprites/spaces.jpg")
   k.loadSpriteAtlas("sprites/char2.png", {
     barbie: { x: 64, y: 80, width: 32, height: 48 },
   })
