@@ -40,6 +40,7 @@ k.scene("level-03", async () => {
     k.pos(0, 0),
     k.fixed(),
     k.z(-100),
+    k.color(240, 100, 130),
   ])
 
   // Hier laden wir die generelle Spiellogik. Also was passieren soll wenn

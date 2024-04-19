@@ -4,6 +4,7 @@ import { generateMapJumpAndRun } from "../map.js"
 import { loadKeyboardJumpAndRun } from "../keyboard.js"
 
 import "./level-03.js"
+import "./lose.js"
 
 /**
  * Szene für das Level 2.
@@ -22,6 +23,7 @@ k.scene("level-02", async () => {
     k.pos(0, 0),
     k.fixed(),
     k.z(-100),
+    k.color(240, 230, 0),
   ])
 
   addGeneralGameLogic()
