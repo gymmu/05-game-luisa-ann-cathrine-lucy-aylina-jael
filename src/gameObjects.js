@@ -29,6 +29,7 @@ export function wallJumpAndRun(x, y) {
     // Damit können wir zum Beispiel prüfen ob sich der Spieler und das
     // Objekt überschneiden, und darauf reagieren.
     k.area(),
+    k.move(k.LEFT, 200),
 
     // Hier können mehrere `Tags` angegeben werden. Mit diesen `Tags` können
     // dann Interaktionen zwischen Spielelementen erstellt werden.
@@ -43,10 +44,11 @@ export function wallJumpAndRun(x, y) {
  */
 export function mushroomJumpAndRun(x, y) {
   k.add([
-    k.sprite("mushroom"),
+    k.sprite("smallmeteorite"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
+    k.move(k.LEFT, 200),
     "obstacle",
     // Hier können wir zusätzliche Eigenschaften von einem Spielobjekt angeben.
     // Mit `isConsumable` könnten wir prüfen das dieses Objekt nur
@@ -64,10 +66,11 @@ export function mushroomJumpAndRun(x, y) {
  */
 export function flowerJumpAndRun(x, y) {
   k.add([
-    k.sprite("flower"),
+    k.sprite("goldenstar"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
+    k.move(k.LEFT, 200),
     "heal",
     {
       isConsumable: true,
@@ -81,10 +84,26 @@ export function flowerJumpAndRun(x, y) {
  */
 export function goalJumpAndRun(x, y) {
   k.add([
-    k.sprite("cave"),
+    k.sprite("wormhole"),
     k.pos(k.vec2(x, y).scale(TILESIZE)),
     k.body({ isStatic: true }),
     k.area(),
+    k.move(k.LEFT, 200),
+    k.anchor("center"),
+    k.scale(3.0),
+    "goal",
+  ])
+}
+
+export function barbie(x, y) {
+  k.add([
+    k.sprite("barbie"),
+    k.pos(k.vec2(x, y).scale(TILESIZE)),
+    k.body({ isStatic: true }),
+    k.area(),
+    k.move(k.LEFT, 200),
+    k.anchor("center"),
+    k.scale(3.0),
     "goal",
   ])
 }
@@ -175,7 +194,7 @@ export function treeRPG(x, y) {
  */
 export function flowerRPG(x, y) {
   k.add([
-    k.sprite("flower"),
+    k.sprite("goldenstar"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
     "flower",
@@ -191,7 +210,7 @@ export function flowerRPG(x, y) {
  */
 export function mushroomRPG(x, y) {
   k.add([
-    k.sprite("mushroom"),
+    k.sprite("smallmeteorite"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
     "obstacle",

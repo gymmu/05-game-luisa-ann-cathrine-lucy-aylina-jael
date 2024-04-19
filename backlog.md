@@ -1,14 +1,32 @@
 # Backlog
 
 - [x] README.md erstellen
-- [ ] Contributors ausfüllen in `package.json` (gleiches Format wie author)
-- [ ] Dokumentation vollständig durchlesen
-- [ ] Name des Spiels ändern
-- [ ] Spielidee auf der Webseite beschreiben (kann später noch erweitert werden)
-- [ ] Bewegung des Spielcharakters verstehen (`onKeyDown` und ähnliche)
-- [ ] Spritesheets verstehen (Dokumentation und die Datei `src/sprites.js`)
-- [ ] Eigene Spritesheets erstellen
-- [ ] Karten verstehen und verändern (`src/maps.js`)
-- [ ] Spielkomponenten verstehen, und neue erstellen (`src/player.js` und
+- [x] Contributors ausfüllen in `package.json` (gleiches Format wie author)
+- [x] Dokumentation vollständig durchlesen
+- [x] Name des Spiels ändern
+- [x] Spielidee auf der Webseite beschreiben (kann später noch erweitert werden)
+- [x] Bewegung des Spielcharakters verstehen (`onKeyDown` und ähnliche)
+- [x] Spritesheets verstehen (Dokumentation und die Datei `src/sprites.js`)
+- [x] Eigene Spritesheets erstellen
+- [x] Karten verstehen und verändern (`src/maps.js`)
+- [x] Spielkomponenten verstehen, und neue erstellen (`src/player.js` und
       `src/maps.js`)
 - [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
+- [x] Level 2 fertig
+- [x] Level 1 fertig
+- [x] Meteoriten einfügen
+- [x] Hintergrund machen
+- [x] Boden weg
+- [x] Rakete einfügen
+- [x] Gelbe Sterne einfügen
+- [x] Bilder auf Libresprite fertig machen
+- [x] Musik einfügen
+- [x] Entscheidung wegen den blauen Sternen
+- [x] Game Over Text einfügen
+- [x] Kometen zufällig generieren
+- [x] Schwarzes Loch an das Ende
+- [ ] Problem mit der Musik flicken
+- [x] Level 2 Steuerung erledigen
+- [ ] Barbie am Snde nach Level 2 einfügen
+- [x] Nicht sterben wenn zu weit nach unten
+- [ ] Sterne machen schneller (oben/unten)

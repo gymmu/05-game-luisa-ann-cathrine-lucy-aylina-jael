@@ -22,7 +22,7 @@ import "./lose.js"
 k.scene("level-01", async () => {
   // Wir stellen die Gravitation ein, damit es sich um ein Jump'n'Run-Spiel
   // handelt.
-  k.setGravity(1200)
+  k.setGravity(0)
 
   // Wir erstellen den Spieler
   createPlayer()
@@ -34,6 +34,13 @@ k.scene("level-01", async () => {
   // Wir müssen dieser Funktion auch den Spieler übergeben, damit die
   // Position vom Spieler richtig gesetzt werden kann.
   await generateMapJumpAndRun("maps/level-01.txt")
+
+  k.add([
+    k.sprite("background", { width: k.width(), height: k.height() }),
+    k.pos(0, 0),
+    k.fixed(),
+    k.z(-100),
+  ])
 
   // Hier laden wir die generelle Spiellogik. Also was passieren soll wenn
   // der Spieler mit einem Objekt kollidiert.
@@ -55,6 +62,12 @@ k.scene("level-01", async () => {
   k.onUpdate(() => {
     const player = k.get("player")[0]
     if (player.pos.y > 720) {
+      k.go("lose")
+    }
+
+    // Wenn das Wurmloch links aus dem fenster geht, ist das spiel verloren
+    const wormhole = k.get("goal")[0]
+    if (wormhole.pos.x < 0) {
       k.go("lose")
     }
   })

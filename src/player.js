@@ -11,7 +11,7 @@ import { k } from "./game.js"
  */
 export default function createPlayer() {
   const player = k.add([
-    k.sprite("hero", { anim: "idleRight" }),
+    k.sprite("ken"),
     k.pos(0, 0),
     k.body(),
     k.area(),
@@ -44,8 +44,9 @@ export default function createPlayer() {
    * geschoben, dass der Spieler in der Mitte ist.
    */
   player.onUpdate(() => {
-    k.camPos(player.pos)
+    k.camPos(k.vec2(player.pos.x + 320, player.pos.y))
   })
+  player.setMaxHP(player.max_hp)
 }
 
 /**

@@ -22,6 +22,8 @@ import { TILESIZE } from "./globals.js"
 
 import { getPlayer } from "./player.js"
 
+import * as GameObjects from "./gameObjects.js"
+
 /**
  * Hier wird die GameEngine initialisiert. Wir können hier verschiedene Dinge
  * anpassen. Wichtig ist das wir kaboom sagen wo unser Spiel gezeichnet werden
@@ -45,6 +47,14 @@ export const k = kaboom({
  * aufrufen, damit die Graphiken auch verfügbar sind.
  */
 loadSprites()
+
+function loadMusic() {
+  k.loadSound("music", "musik/sound.mp3")
+  k.play("music", { loop: true })
+  volume(0.5)
+}
+
+loadMusic()
 
 /**
  * Diese Funktion erstellt die generelle Spiellogik die in allen Levels gilt.
@@ -87,11 +97,10 @@ export function addGeneralGameLogic() {
    * Sekunde verdoppelt. Danach wird die Geschwindigkeit wieder zurück
    * gesetzt.
    */
-  player.on("heal", () => {
-    const oldSpeed = player.speed
-    player.speed *= 2
-    k.wait(1, () => {
-      player.speed = oldSpeed
+  player.on("heal", async () => {
+    player.speed *= 1.5
+    await k.wait(1, () => {
+      player.speed = TILESIZE * 5
     })
   })
 
@@ -99,6 +108,27 @@ export function addGeneralGameLogic() {
     await import("./scenes/lose.js")
     k.go("lose")
   })
+
+  function spawnObstacle() {
+    const rand = k.randi(0, 2)
+    if (rand === 0) {
+      GameObjects.flowerJumpAndRun(
+        k.width() / TILESIZE,
+        k.rand(0, k.height() / TILESIZE),
+      )
+    } else {
+      GameObjects.mushroomJumpAndRun(
+        k.width() / TILESIZE,
+        k.rand(0, k.height() / TILESIZE),
+      )
+    }
+
+    k.wait(k.rand(0.5, 1.5), () => {
+      spawnObstacle()
+    })
+  }
+
+  spawnObstacle()
 }
 
 /**
